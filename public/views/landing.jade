@@ -1,0 +1,25 @@
+div(class="row container-fluid header")
+  div(class="col-md-4 text-center")
+    h1 {{info.header}}
+    p {{info.motd}}
+  div(class="signup")
+    div(class="well col-md-3 col-md-offset-4")
+      input(ng-model="email" class="col-md-7 form-control" placeholder="Email")
+      input(ng-model="password" class="col-md-7 form-control" placeholder="New Password")
+      a(href="#/signup" class="btn btn-success col-md-6") Sign Up!
+      a(ng-click="checkSignin(email,password)" class="btn btn-success col-md-6") Sign In!
+      p(class="loginstatus col-md-12") {{status}}
+  div(class="row col-md-12 panelbody")
+    div.panelbody
+     div(class="row col-md-4 panelinfo")
+       h2 Why
+       br
+       p Because code is beautiful and so are you.
+       br
+       
+       p Your skills and accomplishments are worthy of praise!
+     div(class="col-md-7 col-md-offset-1 panelinfo")
+       h2 Share because you care
+       br
+       p learning how to code is hard enough. Come to a place where people want to help.
+       
